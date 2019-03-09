@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".browsing"
+    android:id="@+id/sw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="3dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <EditText
+                    android:id="@+id/searchtxt"
+                    android:layout_width="245dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorAccent"
+                    android:cursorVisible="true"
+                    android:inputType="textLongMessage"
+                    android:focusable="false"
+                    android:textCursorDrawable="@drawable/white_cursor_edit"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:text="+"
+                    android:id="@+id/newTab11"
+                    android:textAlignment="center"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/go1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#FFC3C3C3"
+                    android:text="go"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/prog"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:progressTint="#FF000000" />
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                android:layout_below="@+id/prog"
+                android:layout_above="@+id/toolbar2"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearlayout">
+
+                <WebView
+                    android:id="@+id/web1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar2"
+            android:layout_alignParentBottom="true"
+            android:background="#FFE6E6E6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:id="@+id/back"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_marginLeft="28dp"
+                    android:id="@+id/for1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_refresh_black_24dp"
+                    android:layout_marginLeft="28dp"
+                    android:id="@+id/reload"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:layout_marginLeft="28dp"
+                    android:id="@+id/home1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bookmark_border_black_24dp"
+                    android:layout_marginLeft="28dp"
+                    android:id="@+id/mark1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share"
+                    android:layout_marginLeft="28dp"
+                    android:id="@+id/share"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+    </RelativeLayout>
+
+       </RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".histry">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Search History"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:id="@+id/aa"
+        android:textStyle="bold"
+        android:background="@drawable/custom_box"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list23"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/aa"
+        android:clickable="true"
+        android:padding="4dp"
+        android:background="@drawable/custom_box"/>
+
+</RelativeLayout>

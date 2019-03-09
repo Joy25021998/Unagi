@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/his1"
+        android:title="History" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/book"
+        android:title="Bookmarks" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/incognito"
+        android:title="Open Incognito tab" />
+
+    <item
+        android:title="My open tabs"
+        android:id="@+id/mytabsb"
+        app:showAsAction="never" />
+</menu>

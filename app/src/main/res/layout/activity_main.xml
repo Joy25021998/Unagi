@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="Unagi Search" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/cae">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/dropdown1"
+                android:spinnerMode="dropdown"
+                android:clickable="false"
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="47dp"
+                android:backgroundTint="@color/colorAccent"
+                android:cursorVisible="true"
+                android:inputType="textLongMessage"
+                android:layout_marginTop="4dp"
+                android:textCursorDrawable="@drawable/white_cursor_edit"
+                android:id="@+id/search"/>
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorAccent"
+                android:text="go"
+                android:textSize="18dp"
+                android:id="@+id/go"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cae"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/gmail"
+                android:id="@+id/gmail"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/yahoo"
+                android:layout_toRightOf="@+id/gmail"
+                android:id="@+id/yahoo1"
+                android:layout_margin="10dp"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/fb"
+                android:layout_toRightOf="@+id/yahoo1"
+                android:id="@+id/facebook"
+                android:layout_margin="10dp"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/instagram"
+                android:layout_toRightOf="@+id/facebook"
+                android:id="@+id/instagram"
+                android:layout_margin="10dp"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/youtube"
+                android:layout_toRightOf="@+id/instagram"
+                android:id="@+id/u"
+                android:layout_margin="10dp"/>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

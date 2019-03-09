@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFDFDFDF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/t1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="7dp"
+        android:id="@+id/stitle"
+        android:textSize="17dp"
+        android:padding="5dp"
+        android:textCursorDrawable="@drawable/white_cursor_edit"
+        android:background="@drawable/custom_box"
+        android:inputType="textLongMessage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download location"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/stitle"
+        android:id="@+id/t2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:layout_marginTop="7dp"
+        android:id="@+id/surl"
+        android:textSize="17dp"
+        android:background="@drawable/custom_box"
+        android:padding="5dp"
+        android:inputType="textLongMessage"
+        android:text="Internal storage/Download"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/surl"
+        android:id="@+id/cancel"
+        android:background="@color/colorPrimaryDark"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/surl"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Download"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/save1"/>
+
+</RelativeLayout>

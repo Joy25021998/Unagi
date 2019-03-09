@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="histry"
+        app:showAsAction="never"
+        android:id="@+id/histry1" />
+
+    <item
+        android:title="Bookmarks"
+        app:showAsAction="never"
+        android:id="@+id/bookmarks1" />
+
+    <item
+        android:title="Incognito Tab"
+        app:showAsAction="never"
+        android:id="@+id/in" />
+
+    <item
+        android:title="My open tabs"
+        app:showAsAction="never"
+        android:id="@+id/mytabsh1" />
+
+
+
+</menu>
